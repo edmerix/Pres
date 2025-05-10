@@ -1,0 +1,8 @@
+{
+    "name": "intro",
+	"title": "Introduction",
+	"thumbnail": "",
+	"main": "index.html",
+	"styles": "slide0.css",
+	"extra": "extra.html"
+}

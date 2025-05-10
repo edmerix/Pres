@@ -1,0 +1,8 @@
+{
+    "name": "more",
+	"title": "Slide 2",
+	"thumbnail": "",
+	"main": "index.html",
+	"styles": "slide1.css",
+	"extra": "extra.html"
+}
