@@ -29,7 +29,15 @@ repository, and a static screenshot of the first slide is [below](#screenshot).
 
 
 ### Shortcuts
-
+|Key| Action |
+|--|--|
+|Arrow keys|Advance (right, down) or go back (left, up) a slide|
+|`Space`|Advance the slide|
+|Number keys|Go to that slide number|
+|`a`|Activate "auto-play", which advances the slide after a specified number of seconds (default: 60)|
+|`e`|Toggle between the main slide and its "extra" information|
+|`z`|Toggle whether the presentation is zoomed/scaled to the current screen or displayed at original size|
+|`Esc`|Stop the "auto-play" feature if it's currently active|
 
 ### Advanced options
 
@@ -39,14 +47,16 @@ Each slide should have its own directory that contains a `manifest.json` file. T
 content can be called whatever you wish, and the `manifest.json` file tells Presentation.js
 what items to display and how. Options inside the `manifest.json` file are:
 
-`{
-    "name": "aUniqueIDforTheSlide",
-    "title": "A title for the slide",
-   	"thumbnail": "an image file to act as the thumbnail for the slide",
-   	"main": "the HTML page containing the main slide",
-    "styles": "the CSS file containing any required extra styling for the slide",
-  	"extra": "an HTML page containing any secondary information (toggled with E)"
-}`
+```
+    {
+        "name": "aUniqueIDforTheSlide",
+        "title": "A title for the slide",
+       	"thumbnail": "an image file to act as the thumbnail for the slide",
+       	"main": "the HTML page containing the main slide",
+        "styles": "the CSS file containing any required extra styling for the slide",
+       	"extra": "an HTML page containing any secondary information (toggled with E)"
+    }
+```
 
 <small>(Note that the name attribute should be appropriate for a JavaScript fieldname, i.e., cannot
 start with a number or have spaces or hyphens, etc., and it must be unique for each slide.
